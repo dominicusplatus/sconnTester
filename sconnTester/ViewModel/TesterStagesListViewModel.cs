@@ -10,6 +10,7 @@ using NLog;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
+using sconnTester.Infrastracture;
 
 namespace sconnTester.ViewModel
 {
@@ -44,15 +45,14 @@ namespace sconnTester.ViewModel
         public TesterStagesListViewModel()
         {
             SetupCmds();
-            Stages = new ObservableCollection<TestStageEntity>();
+            Stages = TestStagingListProvider.GetTestStages();    //new ObservableCollection<TestStageEntity>();
         }
 
 
         [ImportingConstructor]
-        public TesterStagesListViewModel(IRegionManager regionManager)
+        public TesterStagesListViewModel(IRegionManager regionManager) :this()
         {
             this._regionManager = regionManager;
-            SetupCmds();
         }
 
     }
