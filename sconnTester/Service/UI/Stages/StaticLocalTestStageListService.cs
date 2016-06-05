@@ -22,10 +22,27 @@ namespace sconnTester.Service.UI.Stages
             TestStageEntity statusStage = new TestStageEntity
             {
                 ContractName = TesterViewContracts.TesterContractStatus,
-                ImageUri = "",
+                ImageUri = "pack://application:,,,/Images/config.png",
                 Name = "Status"
             };
             Tests.Add(statusStage);
+
+            TestStageEntity testingStage = new TestStageEntity
+            {
+                ContractName = TesterViewContracts.TesterContractTests,
+                ImageUri = "pack://application:,,,/Images/tests.png",
+                Name = "Testing"
+            };
+            Tests.Add(testingStage);
+
+
+            TestStageEntity outputStage = new TestStageEntity
+            {
+                ContractName = TesterViewContracts.TesterContractOutput,
+                ImageUri = "pack://application:,,,/Images/print.png",
+                Name = "Output"
+            };
+            Tests.Add(outputStage);
         }
 
         public ObservableCollection<TestStageEntity> GetAll()

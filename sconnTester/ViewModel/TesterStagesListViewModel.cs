@@ -26,12 +26,28 @@ namespace sconnTester.ViewModel
         private readonly IRegionManager _regionManager;
         private Logger _nlogger = LogManager.GetCurrentClassLogger();
         public ITestStageListService Service { get; set; }
-
         public ICommand ShowStageCommand { get; set; }
 
         private void ShowStage(TestStageEntity entity)
         {
-            
+            try
+            {
+                this._regionManager.RequestNavigate(TesterRegionNames.TestStageViewRegionName, entity.ContractName,
+                    (NavigationResult nr) =>
+                    {
+                        var error = nr.Error;
+                        var result = nr.Result;
+                        if (error != null)
+                        {
+                            _nlogger.Error(error);
+                        }
+                    });
+            }
+            catch (Exception ex)
+            {
+                _nlogger.Error(ex, ex.Message);
+
+            }
         }
 
         

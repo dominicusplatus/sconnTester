@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Composition;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace sconnTester.Model.Test.Tests
 {
+
+    [Export(typeof(IMeasurementTest))]
     public class BoardTestPointTest : IMeasurementTest
     {
         public void Run()

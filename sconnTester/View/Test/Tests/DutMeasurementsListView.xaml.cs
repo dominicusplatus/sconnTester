@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,17 +13,36 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Prism.Regions;
+using sconnTester.Model.Test;
+using sconnTester.Model.Test.Result;
 
 namespace sconnTester.View
 {
     /// <summary>
     /// Interaction logic for DutMeasurementsListView.xaml
     /// </summary>
+
+    [Export]
+    [ViewSortHint("01")]
     public partial class DutMeasurementsListView : UserControl
     {
+        [Import]
+        public IRegionManager RegionManager;
+
         public DutMeasurementsListView()
         {
             InitializeComponent();
         }
+
+
+        [ImportingConstructor]
+        public DutMeasurementsListView(IMeasurementTest viewModel)
+        {
+            this.DataContext = viewModel;
+            InitializeComponent();
+        }
+
     }
+
 }
