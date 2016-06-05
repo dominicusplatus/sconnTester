@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel.Composition;
+using System.Composition;
 using sconnTester.View.Navigation;
 
 namespace sconnRem.View.Config

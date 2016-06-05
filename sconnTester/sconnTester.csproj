@@ -34,8 +34,86 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Prism.Composition, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Composition.5.0.0\lib\NET45\Microsoft.Practices.Prism.Composition.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Interactivity, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Interactivity.5.0.0\lib\NET45\Microsoft.Practices.Prism.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Mvvm, Version=1.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Mvvm.1.1.1\lib\net45\Microsoft.Practices.Prism.Mvvm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Mvvm.Desktop, Version=1.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Mvvm.1.1.1\lib\net45\Microsoft.Practices.Prism.Mvvm.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.PubSubEvents, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.PubSubEvents.1.1.2\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.SharedInterfaces, Version=1.1.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Mvvm.1.1.1\lib\net45\Microsoft.Practices.Prism.SharedInterfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.4\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Prism, Version=6.1.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.6.1.0\lib\net45\Prism.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Prism.Mef.Wpf, Version=6.1.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Mef.6.1.0\lib\net45\Prism.Mef.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Prism.Unity.Wpf, Version=6.1.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Unity.6.1.1\lib\net45\Prism.Unity.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Prism.Wpf, Version=6.1.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Wpf.6.1.0\lib\net45\Prism.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Composition.AttributedModel, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,6 +132,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Bootstrap\SconnTesterMainBootstrapper.cs" />
+    <Compile Include="Infrastracture\TesterRegionNames.cs" />
+    <Compile Include="Infrastracture\TestStagingListProvider.cs" />
     <Compile Include="Service\Measurement\Drivers\Abstract\IMeasurementInterfaceDriver.cs" />
     <Compile Include="Service\Measurement\Drivers\Abstract\INetworkInterfaceDriver.cs" />
     <Compile Include="Service\Measurement\Drivers\Abstract\ISerialInterfaceDriver.cs" />
@@ -64,15 +145,55 @@
     <Compile Include="Service\Measurement\Drivers\Driver\Rigol\RigolSpectrumAnalyzerDriver.cs" />
     <Compile Include="Service\Measurement\Drivers\Driver\Tenma\TenmaMultimiterDriver.cs" />
     <Compile Include="Service\Measurement\IMeasurementService.cs" />
+    <Compile Include="Service\Measurement\MeasurementServiceSingleThreaded.cs" />
     <Compile Include="Service\Output\ITestOutputService.cs" />
-    <Compile Include="View\Test\DutConnectionStatusView.xaml.cs">
-      <DependentUpon>DutConnectionStatusView.xaml</DependentUpon>
+    <Compile Include="Service\Output\MeasurementFileOutputService.cs" />
+    <Compile Include="Service\Output\MeasurementPrinterOutputService.cs" />
+    <Compile Include="ViewModel\TesterInstrumentStatusViewModel.cs" />
+    <Compile Include="ViewModel\TesterMeasurmentListViewModel.cs" />
+    <Compile Include="ViewModel\TesterOutputViewModel.cs" />
+    <Compile Include="ViewModel\TesterStagesListViewModel.cs" />
+    <Compile Include="View\Configuration\WndTesterGlobalConfiguration.xaml.cs">
+      <DependentUpon>WndTesterGlobalConfiguration.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Test\DutMeasurementReportView.xaml.cs">
+    <Compile Include="View\Instruments\Live\Controls\IInstrumentControlPanel.cs" />
+    <Compile Include="View\Instruments\Live\Controls\OscilloscopeInstrumentControlPanel.xaml.cs">
+      <DependentUpon>OscilloscopeInstrumentControlPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Instruments\Live\Controls\PowerSupplyControlPanel.xaml.cs">
+      <DependentUpon>PowerSupplyControlPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Instruments\Live\Instruments\IInstrumentLiveView.cs" />
+    <Compile Include="View\Instruments\Live\Instruments\OscilloscopeInstrumentLiveDataView.xaml.cs">
+      <DependentUpon>OscilloscopeInstrumentLiveDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Instruments\Live\Instruments\PowerSupplyInstrumentLiveDataView.xaml.cs">
+      <DependentUpon>PowerSupplyInstrumentLiveDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Instruments\Live\WndInstrumentLiveView.xaml.cs">
+      <DependentUpon>WndInstrumentLiveView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Navigation\TesterStagedTabsNavigationListView.xaml.cs">
+      <DependentUpon>TesterStagedTabsNavigationListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Test\Output\DutMeasurementReportView.xaml.cs">
       <DependentUpon>DutMeasurementReportView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Test\DutMeasurementsListView.xaml.cs">
+    <Compile Include="View\Test\Status\DutConnectionStatusView.xaml.cs">
+      <DependentUpon>DutConnectionStatusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Test\Status\ZoneConfigModule.cs" />
+    <Compile Include="View\Test\Status\ZoneConfigView.xaml.cs">
+      <DependentUpon>ZoneConfigView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Test\Status\ZoneConfigViewNavigationItem.xaml.cs">
+      <DependentUpon>ZoneConfigViewNavigationItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Test\Tests\DutMeasurementsListView.xaml.cs">
       <DependentUpon>DutMeasurementsListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wnd\WndSconnTester.xaml.cs">
+      <DependentUpon>WndSconnTester.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -86,17 +207,57 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\Test\DutConnectionStatusView.xaml">
+    <Page Include="View\Configuration\WndTesterGlobalConfiguration.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\Test\DutMeasurementReportView.xaml">
+    <Page Include="View\Instruments\Live\Controls\OscilloscopeInstrumentControlPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Instruments\Live\Controls\PowerSupplyControlPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Instruments\Live\Instruments\OscilloscopeInstrumentLiveDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Instruments\Live\Instruments\PowerSupplyInstrumentLiveDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Instruments\Live\WndInstrumentLiveView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Navigation\TesterStagedTabsNavigationListView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\Test\DutMeasurementsListView.xaml">
+    <Page Include="View\Test\Output\DutMeasurementReportView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Test\Status\DutConnectionStatusView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Test\Status\ZoneConfigView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Test\Status\ZoneConfigViewNavigationItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Test\Tests\DutMeasurementsListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Wnd\WndSconnTester.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +297,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,8 +308,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModel\" />
-    <Folder Include="View\Configuration\" />
+    <Folder Include="View\Instruments\Configuration\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
