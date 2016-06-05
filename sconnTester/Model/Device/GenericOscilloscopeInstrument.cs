@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace sconnTester.Model.Device
 {
-    class GenericOscilloscopeInstrument
+    public class GenericOscilloscopeInstrument
     {
     }
 }

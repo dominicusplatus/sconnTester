@@ -5,7 +5,6 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using Microsoft.Practices.Unity;
 using sconnTester.Bootstrap;
 using sconnTester.Service.Measurement;
 using sconnTester.Service.Output;
@@ -22,12 +21,10 @@ namespace sconnTester
         {
             base.OnStartup(e);
 
-            IUnityContainer container = new UnityContainer();
-
-            container.RegisterType<IMeasurementService, MeasurementServiceSingleThreaded>();
-
-            container.RegisterType<ITestOutputService, MeasurementFileOutputService>();
-            container.RegisterType<ITestOutputService, MeasurementPrinterOutputService>();
+            //IUnityContainer container = new UnityContainer();
+            //container.RegisterType<IMeasurementService, MeasurementServiceSingleThreaded>();
+            //container.RegisterType<ITestOutputService, MeasurementFileOutputService>();
+            //container.RegisterType<ITestOutputService, MeasurementPrinterOutputService>();
 
 
             SconnTesterMainBootstrapper bootstrapper = new SconnTesterMainBootstrapper();

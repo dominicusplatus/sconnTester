@@ -4,9 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sconnTester.Wnd"
+        xmlns:regions="http://prismlibrary.com/"
         mc:Ignorable="d"
         Title="WndSconnTester" Height="300" Width="300">
-    <Grid>
-        
+    
+    <Grid  x:Name="LayoutRoot">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.15*" />
+            <ColumnDefinition Width="0.75*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid  Background="White"  Grid.Row="0" Grid.Column="0">
+            <UserControl   regions:RegionManager.RegionName="TopToolbarRegion" />
+        </Grid>
+
+        <Grid    Grid.Row="0" Grid.Column="1">
+            <UserControl   regions:RegionManager.RegionName="TopToolbarRegion" />
+        </Grid>
+
     </Grid>
+
 </Window>

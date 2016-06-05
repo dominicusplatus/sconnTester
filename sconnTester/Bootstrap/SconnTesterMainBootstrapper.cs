@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using Microsoft.Practices.Prism.Logging;
-using Microsoft.Practices.Prism.Modularity;
 using NLog;
+using Prism.Logging;
 using Prism.Mef;
+using Prism.Modularity;
 using sconnTester.Wnd;
 
 namespace sconnTester.Bootstrap

@@ -18,6 +18,7 @@ namespace sconnTester.View
     /// <summary>
     /// Interaction logic for DutConnectionStatusView.xaml
     /// </summary>
+    /// 
     public partial class DutConnectionStatusView : UserControl
     {
         public DutConnectionStatusView()
@@ -25,4 +26,5 @@ namespace sconnTester.View
             InitializeComponent();
         }
     }
+
 }

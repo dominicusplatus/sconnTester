@@ -7,20 +7,21 @@ using System.Threading.Tasks;
 using Prism.Mef.Modularity;
 using Prism.Modularity;
 using Prism.Regions;
-using sconnTester.View.Navigation;
+using sconnTester.Infrastracture;
 
-namespace sconnRem.View.Config.AlarmSystem.Zone
+namespace sconnTester.View.Navigation
 {
-    [ModuleExport(typeof(ZoneConfigModule))]
-    public class ZoneConfigModule : IModule
+
+    [ModuleExport(typeof(TesterTabbedNavigationModule))]
+    public class TesterTabbedNavigationModule : IModule
     {
         [Import]
         public IRegionManager RegionManager;
 
         public void Initialize()
         {
-            this.RegionManager.RegisterViewWithRegion(TesterRegionNames.MainNavigationRegion, typeof(ZoneConfigViewNavigationItem));
+            this.RegionManager.RegisterViewWithRegion(TesterRegionNames.TestStageListRegionName, typeof(TesterStagedTabsNavigationListView));
         }
     }
-
+    
 }
