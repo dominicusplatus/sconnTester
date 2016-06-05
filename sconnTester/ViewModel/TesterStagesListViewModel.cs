@@ -45,7 +45,7 @@ namespace sconnTester.ViewModel
         public TesterStagesListViewModel()
         {
             SetupCmds();
-            Stages = TestStagingListProvider.GetTestStages();    //new ObservableCollection<TestStageEntity>();
+            Stages = TestStagingListProvider.GetTestStages();  
         }
 
 
