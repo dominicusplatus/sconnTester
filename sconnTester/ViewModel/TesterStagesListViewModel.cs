@@ -11,17 +11,13 @@ using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
 using sconnTester.Infrastracture;
+using sconnTester.Model.Abstract;
+using sconnTester.Service.UI.Stages;
 
 namespace sconnTester.ViewModel
 {
+    
 
-    public class TestStageEntity
-    {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string ImageUri { get; set; }
-        public string ContractName { get; set; }
-    }
 
     [Export]
     public class TesterStagesListViewModel : BindableBase
@@ -29,6 +25,7 @@ namespace sconnTester.ViewModel
         public ObservableCollection<TestStageEntity> Stages { get; set; }
         private readonly IRegionManager _regionManager;
         private Logger _nlogger = LogManager.GetCurrentClassLogger();
+        public ITestStageListService Service { get; set; }
 
         public ICommand ShowStageCommand { get; set; }
 
@@ -36,6 +33,8 @@ namespace sconnTester.ViewModel
         {
             
         }
+
+        
 
         private void SetupCmds()
         {
@@ -45,16 +44,18 @@ namespace sconnTester.ViewModel
         public TesterStagesListViewModel()
         {
             SetupCmds();
-            Stages = TestStagingListProvider.GetTestStages();    //new ObservableCollection<TestStageEntity>();
+            Stages = new ObservableCollection<TestStageEntity>();   // TestStagingListProvider.GetTestStages(); 
         }
 
 
         [ImportingConstructor]
-        public TesterStagesListViewModel(IRegionManager regionManager) :this()
+        public TesterStagesListViewModel(IRegionManager regionManager, ITestStageListService service) :this()
         {
             this._regionManager = regionManager;
+            Service = service;
+            Stages = Service.GetAll();
         }
-
+        
     }
 
 }

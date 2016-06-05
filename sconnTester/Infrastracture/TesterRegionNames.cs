@@ -10,7 +10,7 @@ namespace sconnTester.Infrastracture
     {
 
         public const String TestStageListRegionName = "TestStageListRegion";
-        public const String TestStageViewRegionName = "TestStageViewRegionName";
+        public const String TestStageViewRegionName = "TestStageViewRegion";
     }
 
     public static class TesterViewContracts

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:sconnTester.Wnd"
         xmlns:regions="http://prismlibrary.com/"
         mc:Ignorable="d"
-        Title="WndSconnTester" Height="300" Width="300">
+        Title="WndSconnTester" Height="768" Width="1024">
     
     <Grid  x:Name="LayoutRoot">
         <Grid.ColumnDefinitions>
@@ -17,12 +17,12 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <Grid  Background="White"  Grid.Row="0" Grid.Column="0">
-            <UserControl   regions:RegionManager.RegionName="TopToolbarRegion" />
+        <Grid  Grid.Row="0" Grid.Column="0">
+            <UserControl   regions:RegionManager.RegionName="TestStageListRegion" />
         </Grid>
 
-        <Grid    Grid.Row="0" Grid.Column="1">
-            <UserControl   regions:RegionManager.RegionName="TopToolbarRegion" />
+        <Grid   Grid.Row="0" Grid.Column="1">
+            <UserControl   regions:RegionManager.RegionName="TestStageViewRegion" />
         </Grid>
 
     </Grid>
