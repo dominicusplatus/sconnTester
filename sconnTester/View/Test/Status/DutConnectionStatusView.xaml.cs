@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Prism.Regions;
+using sconnTester.Infrastracture;
 using sconnTester.Model.Test.Result;
 
 namespace sconnTester.View
@@ -25,8 +26,9 @@ namespace sconnTester.View
 
 
 
-    [Export]
+    [Export(TesterViewContracts.TesterContractStatus)]
     [ViewSortHint("01")]
+    [PartCreationPolicy(CreationPolicy.Shared)]
     public partial class DutConnectionStatusView : UserControl
     {
         [Import]

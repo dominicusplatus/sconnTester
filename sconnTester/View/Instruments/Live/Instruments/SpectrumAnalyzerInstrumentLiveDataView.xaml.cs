@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
@@ -16,37 +17,39 @@ using System.Windows.Shapes;
 using NLog;
 using Prism.Regions;
 using sconnTester.Infrastracture;
-using sconnTester.Model.Test.Result;
 using sconnTester.ViewModel;
+using sconnTester.ViewModel.Instrument;
 
-namespace sconnTester.View
+namespace sconnTester.View.Instruments.Live.Instruments
 {
     /// <summary>
-    /// Interaction logic for DutMeasurementReportView.xaml
+    /// Interaction logic for SpectrumAnalyzerInstrumentLiveDataView.xaml
     /// </summary>
 
-    [Export(TesterViewContracts.TesterContractOutput)]
+
+
+    [Export(TesterViewContracts.TesterContractData)]
     [ViewSortHint("01")]
     [PartCreationPolicy(CreationPolicy.Shared)]
-    public partial class DutMeasurementReportView : UserControl
+    public partial class SpectrumAnalyzerInstrumentLiveDataView : UserControl
     {
+
+
         [Import]
         public IRegionManager RegionManager;
 
-        public DutMeasurementReportView()
+        public SpectrumAnalyzerInstrumentLiveDataView()
         {
             InitializeComponent();
         }
 
 
         [ImportingConstructor]
-        public DutMeasurementReportView(ITestResultSummary viewModel)
+        public SpectrumAnalyzerInstrumentLiveDataView(InstrumentSpectrumAnalyzerLiveViewModel viewModel)
         {
             this.DataContext = viewModel;
             InitializeComponent();
         }
 
     }
-
-
 }

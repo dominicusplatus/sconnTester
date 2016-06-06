@@ -43,6 +43,15 @@ namespace sconnTester.Service.UI.Stages
                 Name = "Output"
             };
             Tests.Add(outputStage);
+
+            TestStageEntity viewdataStage = new TestStageEntity
+            {
+                ContractName = TesterViewContracts.TesterContractData,
+                ImageUri = "pack://application:,,,/Images/scope.png",
+                Name = "Data"
+            };
+            Tests.Add(viewdataStage);
+
         }
 
         public ObservableCollection<TestStageEntity> GetAll()

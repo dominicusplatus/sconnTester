@@ -1,0 +1,16 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ni="http://schemas.ni.com/controls/2009/xaml/presentation" x:Class="sconnTester.Wnd.Instrument.SpectrumAnalyzer.WndSpectrumAnalyzer"
+        Title="WndSpectrumAnalyzer" Height="605.6" Width="938.1">
+
+    <Grid>
+        <oxy:Plot Title="{Binding Title}">
+            <oxy:Plot.Series>
+                <oxy:LineSeries ItemsSource="{Binding Points}"/>
+            </oxy:Plot.Series>
+        </oxy:Plot>
+    </Grid>
+
+</Window>

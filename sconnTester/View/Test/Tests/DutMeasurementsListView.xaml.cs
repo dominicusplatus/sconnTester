@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Prism.Regions;
+using sconnTester.Infrastracture;
 using sconnTester.Model.Test;
 using sconnTester.Model.Test.Result;
 
@@ -23,8 +24,9 @@ namespace sconnTester.View
     /// Interaction logic for DutMeasurementsListView.xaml
     /// </summary>
 
-    [Export]
+    [Export(TesterViewContracts.TesterContractTests)]
     [ViewSortHint("01")]
+    [PartCreationPolicy(CreationPolicy.Shared)]
     public partial class DutMeasurementsListView : UserControl
     {
         [Import]

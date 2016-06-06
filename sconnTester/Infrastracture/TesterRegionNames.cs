@@ -18,7 +18,7 @@ namespace sconnTester.Infrastracture
         public const String TesterContractStatus = "TesterStatusView";
         public const String TesterContractTests = "TesterTestsView";
         public const String TesterContractOutput = "TesterOutputsView";
-
+        public const String TesterContractData = "TesterDataView";
     }
 
 }
